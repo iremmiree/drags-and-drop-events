@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    background-color: rgb(33, 187, 79);
+}
+    @media (max-width:700px){
+        body{
+            flex-direction: column;
+        }
+    }
+.empty{
+    border: 3px solid #323232;
+    border-radius: 3px;
+    width: 120px;
+    height: 120px;
+    margin:10px;
+    background-color: white;
+    overflow: hidden;
+}
+.fill{
+    background-image: url("../img3.jpg");
+    height: 115px;
+    width: 115px;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hold{
+    border: solid 3px #d4cfcf;
+}
+.hovered{
+    background-color: rgba(50, 50, 50, 0.6);
+    border-color: white;
+    border-style: dotted;
+}
